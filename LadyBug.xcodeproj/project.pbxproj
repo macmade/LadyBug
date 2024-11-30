@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0526E2AA2CF8C4460048E007 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0526E2A82CF8C4460048E007 /* main.cpp */; };
+		0526E2F82CF8EE8B0048E007 /* libLadyBug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0526E2962CF8C4250048E007 /* libLadyBug.a */; };
+		0526E2F92CF8EE960048E007 /* Register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0526E2ED2CF8CB2F0048E007 /* Register.cpp */; };
+		0526E2FA2CF8EE9F0048E007 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0526E2EF2CF8CB2F0048E007 /* String.cpp */; };
+		0526E3032CF8F0150048E007 /* Register.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0526E2EC2CF8CB2F0048E007 /* Register.hpp */; };
+		0526E3042CF8F0150048E007 /* Thread.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0526E2F02CF8CB2F0048E007 /* Thread.hpp */; };
+		0526E3052CF8F0150048E007 /* String.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0526E2EE2CF8CB2F0048E007 /* String.hpp */; };
+		0526E3062CF8F0150048E007 /* Vector.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0526E2FC2CF8EFC00048E007 /* Vector.hpp */; };
+		0526E3082CFB590A0048E007 /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0526E3072CFB59060048E007 /* Thread.cpp */; };
+		0526E30A2CFB5B000048E007 /* LadyBug.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0526E3092CFB5AFB0048E007 /* LadyBug.hpp */; };
+		0526E30C2CFB5B2B0048E007 /* LadyBug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0526E30B2CFB5B270048E007 /* LadyBug.cpp */; };
+		0526E30E2CFB5FF50048E007 /* Formatter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0526E30D2CFB5FEC0048E007 /* Formatter.hpp */; };
+		0526E3102CFB606D0048E007 /* Formatter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0526E30F2CFB60690048E007 /* Formatter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0526E29F2CF8C4410048E007 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0526E2962CF8C4250048E007 /* libLadyBug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLadyBug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0526E2A12CF8C4410048E007 /* CrashTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CrashTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0526E2A82CF8C4460048E007 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0526E2AF2CF8C5D10048E007 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		0526E2B02CF8C5D10048E007 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0526E2B12CF8C5D10048E007 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0526E2B22CF8C5DA0048E007 /* FUNDING.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
+		0526E2B42CF8C5DA0048E007 /* C++.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "C++.xcconfig"; sourceTree = "<group>"; };
+		0526E2B52CF8C5DA0048E007 /* Modules.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Modules.xcconfig; sourceTree = "<group>"; };
+		0526E2B62CF8C5DA0048E007 /* Objective-C.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Objective-C.xcconfig"; sourceTree = "<group>"; };
+		0526E2B82CF8C5DA0048E007 /* All-Languages.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "All-Languages.xcconfig"; sourceTree = "<group>"; };
+		0526E2B92CF8C5DA0048E007 /* C++.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "C++.xcconfig"; sourceTree = "<group>"; };
+		0526E2BA2CF8C5DA0048E007 /* Objective-C.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Objective-C.xcconfig"; sourceTree = "<group>"; };
+		0526E2BB2CF8C5DA0048E007 /* Objective-C-ARC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Objective-C-ARC.xcconfig"; sourceTree = "<group>"; };
+		0526E2BD2CF8C5DA0048E007 /* Address-Sanitizer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Address-Sanitizer.xcconfig"; sourceTree = "<group>"; };
+		0526E2BE2CF8C5DA0048E007 /* Code-Generation.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Code-Generation.xcconfig"; sourceTree = "<group>"; };
+		0526E2BF2CF8C5DA0048E007 /* Language.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Language.xcconfig; sourceTree = "<group>"; };
+		0526E2C02CF8C5DA0048E007 /* Preprocessing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Preprocessing.xcconfig; sourceTree = "<group>"; };
+		0526E2C12CF8C5DA0048E007 /* Undefined-Behavior-Sanitizer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Undefined-Behavior-Sanitizer.xcconfig"; sourceTree = "<group>"; };
+		0526E2C22CF8C5DA0048E007 /* Warning-Policies.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Warning-Policies.xcconfig"; sourceTree = "<group>"; };
+		0526E2C32CF8C5DA0048E007 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		0526E2C52CF8C5DA0048E007 /* Analysis-Policy.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Analysis-Policy.xcconfig"; sourceTree = "<group>"; };
+		0526E2C62CF8C5DA0048E007 /* Apple-APIs.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Apple-APIs.xcconfig"; sourceTree = "<group>"; };
+		0526E2C72CF8C5DA0048E007 /* Generic-Issues.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Generic-Issues.xcconfig"; sourceTree = "<group>"; };
+		0526E2C82CF8C5DA0048E007 /* Objective-C.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Objective-C.xcconfig"; sourceTree = "<group>"; };
+		0526E2C92CF8C5DA0048E007 /* Security.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Security.xcconfig; sourceTree = "<group>"; };
+		0526E2CB2CF8C5DA0048E007 /* Issues.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Issues.xcconfig; sourceTree = "<group>"; };
+		0526E2CD2CF8C5DA0048E007 /* Code-Generation.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Code-Generation.xcconfig"; sourceTree = "<group>"; };
+		0526E2CE2CF8C5DA0048E007 /* General.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = General.xcconfig; sourceTree = "<group>"; };
+		0526E2CF2CF8C5DA0048E007 /* Language.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Language.xcconfig; sourceTree = "<group>"; };
+		0526E2D02CF8C5DA0048E007 /* Warnings-Policies.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Warnings-Policies.xcconfig"; sourceTree = "<group>"; };
+		0526E2D22CF8C5DA0048E007 /* Apple-LLVM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Apple-LLVM.xcconfig"; sourceTree = "<group>"; };
+		0526E2D32CF8C5DA0048E007 /* Architectures.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Architectures.xcconfig; sourceTree = "<group>"; };
+		0526E2D42CF8C5DA0048E007 /* Build-Options.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Build-Options.xcconfig"; sourceTree = "<group>"; };
+		0526E2D52CF8C5DA0048E007 /* Deployment.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Deployment.xcconfig; sourceTree = "<group>"; };
+		0526E2D62CF8C5DA0048E007 /* Search-Paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Search-Paths.xcconfig"; sourceTree = "<group>"; };
+		0526E2D72CF8C5DA0048E007 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		0526E2D82CF8C5DA0048E007 /* Static-Analyzer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Static-Analyzer.xcconfig"; sourceTree = "<group>"; };
+		0526E2D92CF8C5DA0048E007 /* Swift-Compiler.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Swift-Compiler.xcconfig"; sourceTree = "<group>"; };
+		0526E2DB2CF8C5DA0048E007 /* ccache.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ccache.sh; sourceTree = "<group>"; };
+		0526E2DC2CF8C5DA0048E007 /* ccache-config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "ccache-config.sh"; sourceTree = "<group>"; };
+		0526E2DE2CF8C5DA0048E007 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0526E2DF2CF8C5DA0048E007 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		0526E2E02CF8C5DA0048E007 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		0526E2E12CF8C5DA0048E007 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		0526E2E22CF8C5DA0048E007 /* Debug - ccache.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug - ccache.xcconfig"; sourceTree = "<group>"; };
+		0526E2E32CF8C5DA0048E007 /* Debug - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug - Library.xcconfig"; sourceTree = "<group>"; };
+		0526E2E42CF8C5DA0048E007 /* Debug - zld.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug - zld.xcconfig"; sourceTree = "<group>"; };
+		0526E2E52CF8C5DA0048E007 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0526E2E62CF8C5DA0048E007 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		0526E2E72CF8C5DA0048E007 /* Release - ccache.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - ccache.xcconfig"; sourceTree = "<group>"; };
+		0526E2E82CF8C5DA0048E007 /* Release - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - Library.xcconfig"; sourceTree = "<group>"; };
+		0526E2EC2CF8CB2F0048E007 /* Register.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Register.hpp; sourceTree = "<group>"; };
+		0526E2ED2CF8CB2F0048E007 /* Register.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Register.cpp; sourceTree = "<group>"; };
+		0526E2EE2CF8CB2F0048E007 /* String.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = String.hpp; sourceTree = "<group>"; };
+		0526E2EF2CF8CB2F0048E007 /* String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
+		0526E2F02CF8CB2F0048E007 /* Thread.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Thread.hpp; sourceTree = "<group>"; };
+		0526E2F12CF8CB2F0048E007 /* Thread-Apple-ARM64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Thread-Apple-ARM64.cpp"; sourceTree = "<group>"; };
+		0526E2F62CF8EE080048E007 /* LadyBug.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LadyBug.hpp; sourceTree = "<group>"; };
+		0526E2FC2CF8EFC00048E007 /* Vector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+		0526E3072CFB59060048E007 /* Thread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
+		0526E3092CFB5AFB0048E007 /* LadyBug.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LadyBug.hpp; sourceTree = "<group>"; };
+		0526E30B2CFB5B270048E007 /* LadyBug.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LadyBug.cpp; sourceTree = "<group>"; };
+		0526E30D2CFB5FEC0048E007 /* Formatter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Formatter.hpp; sourceTree = "<group>"; };
+		0526E30F2CFB60690048E007 /* Formatter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Formatter.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0526E2942CF8C4250048E007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0526E29E2CF8C4410048E007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0526E2F82CF8EE8B0048E007 /* libLadyBug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0526E28D2CF8C4250048E007 = {
+			isa = PBXGroup;
+			children = (
+				0526E2B12CF8C5D10048E007 /* README.md */,
+				0526E2B02CF8C5D10048E007 /* LICENSE */,
+				0526E2AF2CF8C5D10048E007 /* CODE_OF_CONDUCT.md */,
+				0526E2AB2CF8C5AB0048E007 /* LadyBug */,
+				0526E2A92CF8C4460048E007 /* CrashTest */,
+				0526E2E92CF8C5DA0048E007 /* xcconfig */,
+				0526E2F72CF8EE8B0048E007 /* Frameworks */,
+				0526E2972CF8C4250048E007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0526E2972CF8C4250048E007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2962CF8C4250048E007 /* libLadyBug.a */,
+				0526E2A12CF8C4410048E007 /* CrashTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0526E2A92CF8C4460048E007 /* CrashTest */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2A82CF8C4460048E007 /* main.cpp */,
+			);
+			path = CrashTest;
+			sourceTree = "<group>";
+		};
+		0526E2AB2CF8C5AB0048E007 /* LadyBug */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2AC2CF8C5B20048E007 /* include */,
+				0526E2AD2CF8C5B70048E007 /* source */,
+			);
+			path = LadyBug;
+			sourceTree = "<group>";
+		};
+		0526E2AC2CF8C5B20048E007 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2F62CF8EE080048E007 /* LadyBug.hpp */,
+				0526E2AE2CF8C5BF0048E007 /* LadyBug */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0526E2AD2CF8C5B70048E007 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				0526E30F2CFB60690048E007 /* Formatter.cpp */,
+				0526E30B2CFB5B270048E007 /* LadyBug.cpp */,
+				0526E2ED2CF8CB2F0048E007 /* Register.cpp */,
+				0526E2EF2CF8CB2F0048E007 /* String.cpp */,
+				0526E3072CFB59060048E007 /* Thread.cpp */,
+				0526E2F12CF8CB2F0048E007 /* Thread-Apple-ARM64.cpp */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		0526E2AE2CF8C5BF0048E007 /* LadyBug */ = {
+			isa = PBXGroup;
+			children = (
+				0526E30D2CFB5FEC0048E007 /* Formatter.hpp */,
+				0526E3092CFB5AFB0048E007 /* LadyBug.hpp */,
+				0526E2EC2CF8CB2F0048E007 /* Register.hpp */,
+				0526E2EE2CF8CB2F0048E007 /* String.hpp */,
+				0526E2F02CF8CB2F0048E007 /* Thread.hpp */,
+				0526E2FC2CF8EFC00048E007 /* Vector.hpp */,
+			);
+			path = LadyBug;
+			sourceTree = "<group>";
+		};
+		0526E2B32CF8C5DA0048E007 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2B22CF8C5DA0048E007 /* FUNDING.yml */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		0526E2B72CF8C5DA0048E007 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2B42CF8C5DA0048E007 /* C++.xcconfig */,
+				0526E2B52CF8C5DA0048E007 /* Modules.xcconfig */,
+				0526E2B62CF8C5DA0048E007 /* Objective-C.xcconfig */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		0526E2BC2CF8C5DA0048E007 /* Warnings */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2B82CF8C5DA0048E007 /* All-Languages.xcconfig */,
+				0526E2B92CF8C5DA0048E007 /* C++.xcconfig */,
+				0526E2BA2CF8C5DA0048E007 /* Objective-C.xcconfig */,
+				0526E2BB2CF8C5DA0048E007 /* Objective-C-ARC.xcconfig */,
+			);
+			path = Warnings;
+			sourceTree = "<group>";
+		};
+		0526E2C42CF8C5DA0048E007 /* Apple-LLVM */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2B72CF8C5DA0048E007 /* Language */,
+				0526E2BC2CF8C5DA0048E007 /* Warnings */,
+				0526E2BD2CF8C5DA0048E007 /* Address-Sanitizer.xcconfig */,
+				0526E2BE2CF8C5DA0048E007 /* Code-Generation.xcconfig */,
+				0526E2BF2CF8C5DA0048E007 /* Language.xcconfig */,
+				0526E2C02CF8C5DA0048E007 /* Preprocessing.xcconfig */,
+				0526E2C12CF8C5DA0048E007 /* Undefined-Behavior-Sanitizer.xcconfig */,
+				0526E2C22CF8C5DA0048E007 /* Warning-Policies.xcconfig */,
+				0526E2C32CF8C5DA0048E007 /* Warnings.xcconfig */,
+			);
+			path = "Apple-LLVM";
+			sourceTree = "<group>";
+		};
+		0526E2CA2CF8C5DA0048E007 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2C52CF8C5DA0048E007 /* Analysis-Policy.xcconfig */,
+				0526E2C62CF8C5DA0048E007 /* Apple-APIs.xcconfig */,
+				0526E2C72CF8C5DA0048E007 /* Generic-Issues.xcconfig */,
+				0526E2C82CF8C5DA0048E007 /* Objective-C.xcconfig */,
+				0526E2C92CF8C5DA0048E007 /* Security.xcconfig */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		0526E2CC2CF8C5DA0048E007 /* Static-Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2CA2CF8C5DA0048E007 /* Issues */,
+				0526E2CB2CF8C5DA0048E007 /* Issues.xcconfig */,
+			);
+			path = "Static-Analyzer";
+			sourceTree = "<group>";
+		};
+		0526E2D12CF8C5DA0048E007 /* Swift-Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2CD2CF8C5DA0048E007 /* Code-Generation.xcconfig */,
+				0526E2CE2CF8C5DA0048E007 /* General.xcconfig */,
+				0526E2CF2CF8C5DA0048E007 /* Language.xcconfig */,
+				0526E2D02CF8C5DA0048E007 /* Warnings-Policies.xcconfig */,
+			);
+			path = "Swift-Compiler";
+			sourceTree = "<group>";
+		};
+		0526E2DA2CF8C5DA0048E007 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2C42CF8C5DA0048E007 /* Apple-LLVM */,
+				0526E2CC2CF8C5DA0048E007 /* Static-Analyzer */,
+				0526E2D12CF8C5DA0048E007 /* Swift-Compiler */,
+				0526E2D22CF8C5DA0048E007 /* Apple-LLVM.xcconfig */,
+				0526E2D32CF8C5DA0048E007 /* Architectures.xcconfig */,
+				0526E2D42CF8C5DA0048E007 /* Build-Options.xcconfig */,
+				0526E2D52CF8C5DA0048E007 /* Deployment.xcconfig */,
+				0526E2D62CF8C5DA0048E007 /* Search-Paths.xcconfig */,
+				0526E2D72CF8C5DA0048E007 /* Signing.xcconfig */,
+				0526E2D82CF8C5DA0048E007 /* Static-Analyzer.xcconfig */,
+				0526E2D92CF8C5DA0048E007 /* Swift-Compiler.xcconfig */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0526E2DD2CF8C5DA0048E007 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2DB2CF8C5DA0048E007 /* ccache.sh */,
+				0526E2DC2CF8C5DA0048E007 /* ccache-config.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		0526E2E92CF8C5DA0048E007 /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				0526E2B32CF8C5DA0048E007 /* .github */,
+				0526E2DA2CF8C5DA0048E007 /* Common */,
+				0526E2DD2CF8C5DA0048E007 /* Scripts */,
+				0526E2DE2CF8C5DA0048E007 /* .gitignore */,
+				0526E2DF2CF8C5DA0048E007 /* CODE_OF_CONDUCT.md */,
+				0526E2E02CF8C5DA0048E007 /* Common.xcconfig */,
+				0526E2E12CF8C5DA0048E007 /* Debug.xcconfig */,
+				0526E2E22CF8C5DA0048E007 /* Debug - ccache.xcconfig */,
+				0526E2E32CF8C5DA0048E007 /* Debug - Library.xcconfig */,
+				0526E2E42CF8C5DA0048E007 /* Debug - zld.xcconfig */,
+				0526E2E52CF8C5DA0048E007 /* README.md */,
+				0526E2E62CF8C5DA0048E007 /* Release.xcconfig */,
+				0526E2E72CF8C5DA0048E007 /* Release - ccache.xcconfig */,
+				0526E2E82CF8C5DA0048E007 /* Release - Library.xcconfig */,
+			);
+			name = xcconfig;
+			path = Submodules/xcconfig;
+			sourceTree = "<group>";
+		};
+		0526E2F72CF8EE8B0048E007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0526E2922CF8C4250048E007 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0526E3032CF8F0150048E007 /* Register.hpp in Headers */,
+				0526E30E2CFB5FF50048E007 /* Formatter.hpp in Headers */,
+				0526E3042CF8F0150048E007 /* Thread.hpp in Headers */,
+				0526E30A2CFB5B000048E007 /* LadyBug.hpp in Headers */,
+				0526E3052CF8F0150048E007 /* String.hpp in Headers */,
+				0526E3062CF8F0150048E007 /* Vector.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0526E2952CF8C4250048E007 /* LadyBug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0526E29A2CF8C4250048E007 /* Build configuration list for PBXNativeTarget "LadyBug" */;
+			buildPhases = (
+				0526E2922CF8C4250048E007 /* Headers */,
+				0526E2932CF8C4250048E007 /* Sources */,
+				0526E2942CF8C4250048E007 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LadyBug;
+			packageProductDependencies = (
+			);
+			productName = LadyBug;
+			productReference = 0526E2962CF8C4250048E007 /* libLadyBug.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0526E2A02CF8C4410048E007 /* CrashTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0526E2A52CF8C4410048E007 /* Build configuration list for PBXNativeTarget "CrashTest" */;
+			buildPhases = (
+				0526E29D2CF8C4410048E007 /* Sources */,
+				0526E29E2CF8C4410048E007 /* Frameworks */,
+				0526E29F2CF8C4410048E007 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrashTest;
+			packageProductDependencies = (
+			);
+			productName = CrashTest;
+			productReference = 0526E2A12CF8C4410048E007 /* CrashTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0526E28E2CF8C4250048E007 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					0526E2952CF8C4250048E007 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					0526E2A02CF8C4410048E007 = {
+						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
+					};
+				};
+			};
+			buildConfigurationList = 0526E2912CF8C4250048E007 /* Build configuration list for PBXProject "LadyBug" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0526E28D2CF8C4250048E007;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0526E2972CF8C4250048E007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0526E2952CF8C4250048E007 /* LadyBug */,
+				0526E2A02CF8C4410048E007 /* CrashTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0526E2932CF8C4250048E007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0526E30C2CFB5B2B0048E007 /* LadyBug.cpp in Sources */,
+				0526E3102CFB606D0048E007 /* Formatter.cpp in Sources */,
+				0526E2FA2CF8EE9F0048E007 /* String.cpp in Sources */,
+				0526E2F92CF8EE960048E007 /* Register.cpp in Sources */,
+				0526E3082CFB590A0048E007 /* Thread.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0526E29D2CF8C4410048E007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0526E2AA2CF8C4460048E007 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0526E2982CF8C4250048E007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0526E2E12CF8C5DA0048E007 /* Debug.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = LadyBug/include;
+			};
+			name = Debug;
+		};
+		0526E2992CF8C4250048E007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0526E2E62CF8C5DA0048E007 /* Release.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = LadyBug/include;
+			};
+			name = Release;
+		};
+		0526E29B2CF8C4250048E007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0526E29C2CF8C4250048E007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0526E2A62CF8C4410048E007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		0526E2A72CF8C4410048E007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0526E2912CF8C4250048E007 /* Build configuration list for PBXProject "LadyBug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0526E2982CF8C4250048E007 /* Debug */,
+				0526E2992CF8C4250048E007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0526E29A2CF8C4250048E007 /* Build configuration list for PBXNativeTarget "LadyBug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0526E29B2CF8C4250048E007 /* Debug */,
+				0526E29C2CF8C4250048E007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0526E2A52CF8C4410048E007 /* Build configuration list for PBXNativeTarget "CrashTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0526E2A62CF8C4410048E007 /* Debug */,
+				0526E2A72CF8C4410048E007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0526E28E2CF8C4250048E007 /* Project object */;
+}
